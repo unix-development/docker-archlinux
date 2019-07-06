@@ -4,7 +4,7 @@ services:
   - docker
 install:
   - docker login --username=unixdevelopment --password=$PASSWORD
-  - docker build --tag=archlinux
+  - docker build --tag=archlinux ./
   - docker tag archlinux unixdevelopment/archlinux
   - docker push archlinux unixdevelopment/archlinux
 env:
