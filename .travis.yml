@@ -6,7 +6,7 @@ install:
   - docker login --username=unixdevelopment --password=$PASSWORD
   - docker build --tag=archlinux ./
   - docker tag archlinux unixdevelopment/archlinux
-  - docker push archlinux unixdevelopment/archlinux
+  - docker push unixdevelopment/archlinux
 env:
   global:
     secure: gtMrO4MzyxMhOXrgHxCdy6nRumCMt3z2LTv9U/4uLJ0kMDS6xpAW15eYt34utgMqdWu+e0ogpq4cctitDK7gaA0fTSL0WiH23CslhfsOiF/T0ljy9uum32yrgKyO+479v1GsUZESWwkWhI8mwx5F3YWaqFyoUBJMe4BqupnTq44WR9AQYHFbJ3cFBApCB9vPancLWkwFNv4g9t3uwPput6GoCsntaZOMy+vX50DEvRK4WMvhb0LPtnSo4h27D5QF4+n4wo04hWNAFZtCx3krx5+1BENmBtQjxaalZW2JIycSPDyTjwUTnVP4G3+J2IHvRBmTKBNraUbY1OPPIuNMfvQgRjKUoqFVX1qP59KEy6hapaseC+VWAUr65U9SHeBOLQS3LdLQm8dHM2//LB2aIZNhBg16sMUTdPyLzVXLz2QijmzdcMQFTxzxRFp/Flnem935cX2/O4SbxmXeepe1sCU0P0HjuFQCR+HqcoC6obpNETjO0il28H7TABbvuDJny21DoL86YUDIWKu6VjtraOvDahhoMP6vZ/CussGXrGqE4ZEpaC+a+MMUp0jfrMt4gtitFbYtYbzZ1ZcYinAsfGdafZIlubWDh8xfkfIQlRjjtC+jcI9i3jnY05oFcLnOakXddqkqiwfRv5YZuoTuS6JQ4KEYHJk4x9D7D7SfjNs=
