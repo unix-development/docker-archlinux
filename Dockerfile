@@ -1,4 +1,4 @@
-FROM unixdevelopment/archlinux
+FROM archlinux/base
 
+RUN chmod 577 /etc/pacman.conf
 RUN yes | sudo pacman -Syu
-RUN pip install githubrelease
