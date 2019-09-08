@@ -3,7 +3,7 @@ FROM archlinux/base
 RUN echo "Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch" >> /etc/pacman.d/mirrorlist
 RUN echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 RUN yes | pacman -Syu
-RUN yes | pacman -S \
+RUN pacman -S --needed --noprogressbar --noconfirm \
 	awk \
 	base-devel \
 	bash \
