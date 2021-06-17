@@ -3,8 +3,8 @@ FROM archlinux
 RUN chmod 777 /etc/pacman.conf
 RUN echo "Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch" >> /etc/pacman.d/mirrorlist
 RUN echo "%wheel ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
-RUN mkdir -p /var/lib/pacman/
-RUN yes | pacman -Syyu
+RUN pacman-key --init
+RUN yes | pacman -Syu
 RUN pacman -S --needed --noprogressbar --noconfirm \
 	awk \
 	base-devel \
