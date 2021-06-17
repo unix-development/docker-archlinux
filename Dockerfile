@@ -1,4 +1,4 @@
-FROM archlinux/base
+FROM archlinux
 
 RUN chmod 777 /etc/pacman.conf
 RUN echo "Server = https://mirrors.kernel.org/archlinux/$repo/os/$arch" >> /etc/pacman.d/mirrorlist
